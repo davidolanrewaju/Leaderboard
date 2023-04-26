@@ -7,26 +7,26 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/src/style.css">
-    </head>
+    <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
     <body>
         <h1>Leaderboard</h1>
         <main id="main-container">
+            <section id="leaderboard">
+                <div class="leaderboard-header">
+                    <h2 class="leaderboard-text-header">Recent Scores</h2>
+                    <button>Refresh</button>
+                </div>
+                <p class="display-details">
+                    David: 100
+                </p>
+            </section>
+            
             <section id="add-details">
                 <h2 class="add-details_header">Add Your Score</h2>
                 <form id="form">
                     <input id="name" type="text" placeholder="Enter your name">
                     <input id="score" type="text" placeholder="Enter your score">
-                    <input id="add-btn" type="submit" value="Add">
                 </form>
-            </section>
-            <section id="leaderboard">
-                <div class="leaderboard-header">
-                    <h2 class="leaderboard-text-header">Recent Scores</h2>
-                    <button class="refresh-btn">Refresh</button>
-                </div>
-                <p class="display-details">
-                    David: 100
-                </p>
             </section>
         </main>
         <script src="/src/index.js"></script>

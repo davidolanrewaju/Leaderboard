@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 50px 10%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#leaderboard-header {
+  display: flex;
+  flex-direction: column;
+}
