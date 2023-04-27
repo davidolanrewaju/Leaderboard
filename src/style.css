@@ -9,7 +9,7 @@ body {
 
 #header-container {
   margin-bottom: 6%;
-  background-color: #5a5a5a;
+  background-color: rgb(90, 90, 90);
 }
 
 #header-container h1 {
@@ -19,6 +19,7 @@ body {
   font-style: italic;
   text-transform: uppercase;
 }
+
 #main-container {
   display: flex;
   flex-direction: row;
@@ -47,7 +48,7 @@ body {
 #name,
 #score {
   padding: 9px;
-  background: #bbbbbb;
+  background: rgb(187, 187, 187);
   outline: none;
   border: none;
   font-family: 'Ubuntu', sans-serif;
