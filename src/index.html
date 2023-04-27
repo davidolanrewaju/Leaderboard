@@ -9,10 +9,13 @@
         <link rel="stylesheet" href="/src/style.css">
     </head>
     <body>
-        <h1>Leaderboard</h1>
+        <main id="header-container">
+            <h1>Leaderboard</h1>
+        </main>
+        
         <main id="main-container">
             <section id="add-details">
-                <h2 class="add-details_header">Add Your Score</h2>
+                <h2 class="add-details-header">Add Your Score</h2>
                 <form id="form">
                     <input id="name" type="text" placeholder="Enter your name">
                     <input id="score" type="text" placeholder="Enter your score">
@@ -22,11 +25,11 @@
             <section id="leaderboard">
                 <div class="leaderboard-header">
                     <h2 class="leaderboard-text-header">Recent Scores</h2>
-                    <button class="refresh-btn">Refresh</button>
+                    <input class="refresh-btn" type="button" value="Refresh">
                 </div>
-                <p class="display-details">
-                    David: 100
-                </p>
+                <div class="leaderboard-list">
+                    <p class="display-details">David: 100</p>
+                </div>
             </section>
         </main>
         <script src="/src/index.js"></script>
