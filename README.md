@@ -51,7 +51,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 AwesomeBooks <a name="about-project"></a>
+# ⚔ Leaderboard <a name="about-project"></a>
 
 **Leaderboard** is a project that helps showcase the use of **APIs** (a software intermediary that allows two applications to talk to each other) in creating webapps.
 
