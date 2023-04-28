@@ -1,28 +1,33 @@
+import { Leaderboard } from './leaderboard-api.js';
+
 const inputName = document.querySelector('#name');
 const inputScore = document.querySelector('#score');
 const addBtn = document.querySelector('#add-btn');
 const displayList = document.querySelector('.leaderboard-list');
-// const refreshBtn = document.querySelector('refresh-btn');
+const refreshBtn = document.querySelector('.refresh-btn');
 
-const details = [];
+const leaderboard = new Leaderboard(inputName, inputScore);
 
-function displayLeaderboard() {
+addBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  leaderboard.createScores();
+});
+
+const displayLeaderboard = async () => {
   displayList.innerText = ''; // clear leaderboard section
-  details.forEach((content) => {
+  const response = await leaderboard.getScores();
+  response.result.forEach((item) => {
     const displayDetails = document.createElement('p');
     displayDetails.classList.add('display-details');
     displayDetails.innerHTML += `
-      <b>${content.name}</b>: ${content.score}
+      <b>${item.user}</b>: ${item.score}
     `;
     displayList.appendChild(displayDetails);
   });
-}
+};
 
-addBtn.addEventListener('click', () => {
-  const name = inputName.value;
-  const score = inputScore.value;
-  const content = { name, score };
-  details.push(content);
+refreshBtn.addEventListener('click', () => {
+  leaderboard.getScores();
   displayLeaderboard();
 });
 
