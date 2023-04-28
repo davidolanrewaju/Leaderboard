@@ -29,5 +29,4 @@ class Leaderboard {
   };
 }
 
-// eslint-disable-next-line import/prefer-default-export
-export { Leaderboard };
+export default Leaderboard;

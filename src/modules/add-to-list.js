@@ -1,4 +1,4 @@
-import { Leaderboard } from './leaderboard-api.js';
+import Leaderboard from './leaderboard-api.js';
 
 const inputName = document.querySelector('#name');
 const inputScore = document.querySelector('#score');
@@ -31,5 +31,4 @@ refreshBtn.addEventListener('click', () => {
   displayLeaderboard();
 });
 
-// eslint-disable-next-line import/prefer-default-export
-export { displayLeaderboard };
+export default displayLeaderboard;
