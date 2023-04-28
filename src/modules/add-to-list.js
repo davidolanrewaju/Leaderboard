@@ -11,6 +11,8 @@ const leaderboard = new Leaderboard(inputName, inputScore);
 addBtn.addEventListener('click', (event) => {
   event.preventDefault();
   leaderboard.createScores();
+  inputName.value = '';
+  inputScore.value = '';
 });
 
 const displayLeaderboard = async () => {
