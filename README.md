@@ -55,6 +55,10 @@ After you're finished please remove all the comments and instructions!
 
 **Leaderboard** is a project that helps showcase the use of **APIs** (a software intermediary that allows two applications to talk to each other) in creating webapps.
 
+![Screenshot (26)](https://github.com/davidolanrewaju/Leaderboard/assets/63909901/496ad658-8c0b-4f5d-9345-72713334c563)
+
+![Screenshot (27)](https://github.com/davidolanrewaju/Leaderboard/assets/63909901/bbc65e78-56bf-477d-aeb4-c32f940d23b9)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
